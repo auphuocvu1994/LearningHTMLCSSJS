@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #4daf54;
+    --pink-color: #f2726a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    border-collapse: none;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #272d40;
+    border-radius: 15px;
+    color: white;
+    margin: 0 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__image {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--pink-color);
+    overflow: hidden;
+    transition: 0.25s;
+    transform: translateY(25px);
+    margin: 0 auto;
+}
+.card__image:hover {
+    height: 100%;
+    width: 100%;
+    border-radius: unset;
+    border: unset;
+    transform: translateY(0);
+}
+
+
+span.card__name {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 40px;
+}
+
+span.card__title {
+    color: var(--pink-color);
+    display: block;
+}
+
+.card__media a {
+    margin: 25px 20px 40px !important;
+    display: inline-block;
+    color: white;
+}
+
+button.btn.btn-contact {
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--pink-color);
+    padding: 10px 20px;
+    border-radius: inherit;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 13px;
+}

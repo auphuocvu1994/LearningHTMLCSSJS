@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Link font, icon  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="weather">
+            <input class="txt-input" type="text" placeholder="Search...">
+            <div class="weather__content hide">
+                <div class="weather__block">
+                    <div class=" weather__address">
+                        <h1 class="weather__lbl--lg lbl-city">Ha Noi</h1>
+                        <h1 class="weather__lbl--lg lbl-country">,VN</h1>
+                    </div>
+                    <div class=" weather__date">
+                        <h4 class="weath__lbl--sm lbl-datetime">2/6/2022</h4>
+                    </div>
+                </div>
+                <div class="weather__block--temparature">
+                    <span class="lbl-tem"></span> <sup>o</sup> <span>C</span>
+                </div>
+
+                <h1 class="weather__lbl--lg mb-40 lbl-des"></h1>
+
+                <div class="weather__block--detail">
+                    <div class="weather__block_info">
+                        <i class="fas fa-eye"></i>
+                        <span class="lbl-eye">1000(m)</span>
+                    </div>
+                    <div class="weather__block_info">
+                        <i class="fas fa-wind"></i>
+                        <span class="lbl-win">1000(m)</span>
+                    </div>
+                    <div class="weather__block_info">
+                        <i class="fas fa-cog"></i>
+                        <span class="lbl-set">1000(m)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/weather.js"></script>
+</body>
+
+</html>
